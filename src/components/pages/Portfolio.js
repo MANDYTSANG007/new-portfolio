@@ -34,7 +34,13 @@ export default function Portfolio() {
                 position="below"
               />
               <Stack direction="row" >
-                <Button className={classes.buttons} variant="contained">GitHub</Button>
+                <Button 
+                  className={classes.buttons} 
+                  variant="contained"
+                  onClick={event => {window.location=item.githubLink}}
+                  >
+                    GitHub
+                </Button>
                 <Button className={classes.buttons} variant="contained">Deployed Link</Button>
               </Stack>
             </ImageListItem>
@@ -50,6 +56,8 @@ const itemData = [
   {
     img: perfectCupImg,
     title: 'Perfect Cup - a Coffee App.',
+    githubLink:"https://github.com/MChambersIV/Perfect-Cup",
+    deployLink:"https://powerful-wildwood-54385.herokuapp.com/",
   },
   {
     img: movieImg,
