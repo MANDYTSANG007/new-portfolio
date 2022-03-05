@@ -1,7 +1,7 @@
 import React from 'react';
 //import { Typography, Card, Grid, Container} from '@mui/material';
 import useStyles from '../../styles';
-
+import {Container} from '@mui/material';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import ImageList from '@mui/material/ImageList';
@@ -17,26 +17,32 @@ import eCommerceImg from "../../assets/images/e-commerce.png";
 export default function Portfolio() {
   const classes = useStyles();
   return (
-    <ImageList className={classes.imagelist}>
-      {itemData.map((item) => (
-        <ImageListItem key={item.img}>
-          <img
-            src={item.img}
-            srcSet={item.img}
-            alt={item.title}
-            loading="lazy"
-          />
-          <ImageListItemBar
-            title={item.title}
-            position="below"
-          />
-          <Stack direction="row" >
-            <Button className={classes.buttons} variant="contained">GitHub</Button>
-            <Button className={classes.buttons} variant="contained">Deployed Link</Button>
-          </Stack>
-        </ImageListItem>
-      ))}
-    </ImageList>
+    <main>
+    <div>
+      <Container>
+        <ImageList className={classes.imagelist} gap={30}>
+          {itemData.map((item) => (
+            <ImageListItem key={item.img}>
+              <img
+                src={item.img}
+                srcSet={item.img}
+                alt={item.title}
+                loading="lazy"
+              />
+              <ImageListItemBar
+                title={item.title}
+                position="below"
+              />
+              <Stack direction="row" >
+                <Button className={classes.buttons} variant="contained">GitHub</Button>
+                <Button className={classes.buttons} variant="contained">Deployed Link</Button>
+              </Stack>
+            </ImageListItem>
+          ))}
+        </ImageList>
+      </Container>
+    </div>
+    </main>
   );
 }
 

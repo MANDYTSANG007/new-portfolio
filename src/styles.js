@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
             justify: "center",
             width: "80vw",
             height: "100vw",
+            
         },
         buttons: {
             marginRight: "20px",
