@@ -2,8 +2,10 @@ import React from 'react';
 import { Typography, Container, Grid} from '@mui/material';
 import Icon from '@mui/icons-material';
 import pic from "../../assets/images/IMG_4853.JPG";
+import resume from "../../assets/images/resume.pdf";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import DocumentScannerIcon from '@mui/icons-material/DocumentScanner';
 import useStyles from '../../styles';
 
 export default function Home(){
@@ -32,13 +34,19 @@ export default function Home(){
           <Grid container direction="row" alignItems="center">
             <Grid item>
               <GitHubIcon 
-                onClick={event =>  window.location.href='https://github.com/MANDYTSANG007'} 
+                onClick={event =>  window.open('https://github.com/MANDYTSANG007')}
                 className={classes.clickableIcon}
               />
             </Grid>
             <Grid item>
               <LinkedInIcon 
-                onClick={event =>  window.location.href='https://www.linkedin.com/in/man-tsang-64308b22a/'} 
+                onClick={event =>  window.open('https://www.linkedin.com/in/man-tsang-64308b22a/')} 
+                className={classes.clickableIcon}
+              />
+            </Grid>
+            <Grid item>
+              <DocumentScannerIcon 
+                onClick={event =>  {window.open(resume)}} 
                 className={classes.clickableIcon}
               />
             </Grid>
