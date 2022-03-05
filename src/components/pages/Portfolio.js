@@ -37,11 +37,17 @@ export default function Portfolio() {
                 <Button 
                   className={classes.buttons} 
                   variant="contained"
-                  onClick={event => {window.location=item.githubLink}}
+                  onClick={event => {window.location=item.githubURL}}
                   >
                     GitHub
                 </Button>
-                <Button className={classes.buttons} variant="contained">Deployed Link</Button>
+                <Button 
+                  className={classes.buttons} 
+                  variant="contained"
+                  onClick={event => {window.location=item.deployedURL}}
+                  >
+                    Deployed Link
+                </Button>
               </Stack>
             </ImageListItem>
           ))}
@@ -56,27 +62,37 @@ const itemData = [
   {
     img: perfectCupImg,
     title: 'Perfect Cup - a Coffee App.',
-    githubLink:"https://github.com/MChambersIV/Perfect-Cup",
-    deployLink:"https://powerful-wildwood-54385.herokuapp.com/",
+    githubURL:"https://github.com/MChambersIV/Perfect-Cup",
+    deployedURL:"https://powerful-wildwood-54385.herokuapp.com/",
   },
   {
     img: movieImg,
     title: 'Is-It-a-Movie?',
+    githubURL:"https://github.com/scottybuoy/Is-it-a-Movie.git",
+    deployedURL:"https://scottybuoy.github.io/Is-it-a-Movie/",
   },
   {
     img: notebookImg,
     title: 'MT-Notebook',
+    githubURL:"https://github.com/MANDYTSANG007/MT-Notebook",
+    deployedURL:"https://hmt-notebook.herokuapp.com/notes",
   },
   {
     img: schedulerImg,
-    title: 'Work-Day Scheduler',
+    title: 'Work-Day-Scheduler',
+    githubURL:"https://github.com/MANDYTSANG007/Work-Day-Scheduler",
+    deployedURL:"https://mandytsang007.github.io/Work-Day-Scheduler/",
   },
   {
     img: eCommerceImg,
-    title: 'E-Commerce Backend',
+    title: 'E-Commerce ORM',
+    githubURL:"https://github.com/MANDYTSANG007/E-Commerce-ORM",
+    deployedURL:"https://youtu.be/srMYPrpeWfo",
   },
   {
     img: techBlogImg,
-    title: 'Tech Blog',
+    title: 'Developers-Tech-Blog',
+    githubURL:"https://github.com/MANDYTSANG007/Developers-Tech-Blog",
+    deployedURL:"https://mandyblogapp.herokuapp.com/",
   }
 ];
