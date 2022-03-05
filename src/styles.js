@@ -36,6 +36,9 @@ const useStyles = makeStyles((theme) => ({
             '&:hover': {
                 color: "red",
             }
+        },
+        navStyle: {
+            backgroundColor: "#ffc107",
         }
     }));
 

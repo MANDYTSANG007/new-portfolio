@@ -1,6 +1,6 @@
 import React from 'react';
 import { Typography, Container, Grid} from '@mui/material';
-import Icon from '@mui/icons-material';
+//import Icon from '@mui/icons-material';
 import pic from "../../assets/images/IMG_4853.JPG";
 import resume from "../../assets/images/resume.pdf";
 import GitHubIcon from '@mui/icons-material/GitHub';
