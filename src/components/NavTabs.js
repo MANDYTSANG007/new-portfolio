@@ -1,9 +1,21 @@
 import React from 'react';
-import { Container, AppBar, Toolbar, Typography, } from '@mui/material';
+import { Container, AppBar, Toolbar, Typography, IconButton, Box, Menu, MenuItem, Button} from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
 import useStyles from '../styles';
-const pages = ["Home", "Portfolio"];
+const pages = [
+    {
+        pageTitle: "Home",
+        pageURL: "Home",
+    }, 
+    {
+        pageTitle: "Portfolio",
+        pageURL: "Portfolio",
+    },
+];
 
-const NavTabs = () => {
+const NavTabs = (props) => {
+    // props.handlePageChange is a function
+
     const classes = useStyles();
 
     const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -11,9 +23,11 @@ const NavTabs = () => {
     const handleOpenNavMenu = (event) => {
         setAnchorElNav(event.currentTarget);
     }
-    const handleCloseNavMenu = () => {
+    const handleCloseNavMenu = (pageURL) => {
         setAnchorElNav(null);
-    };
+        if (pageURL)
+            props.handlePageChange(pageURL);
+    }
 
     return (
         <AppBar className={classes.navStyle} position="static">
@@ -22,11 +36,77 @@ const NavTabs = () => {
                     <Typography variant="h6" noWrap component="div" sx={{ mr: 2, display: {xs: 'none', md: 'flex'}}}>
                         Mandy Tsang
                     </Typography>
+                    <Box sx={{ flexGrow: 1, display: {xs: 'flex', md: 'none'}}}>
+                        <IconButton
+                            size="large"
+                            aria-controls="menu-appbar"
+                            aria-haspopup="true"
+                            onClick={handleOpenNavMenu}
+                            color="inherit"
+                        >
+                            <MenuIcon/>
+                        </IconButton>
+                        <Menu
+                            id="menu-appbar"
+                            anchorEl={anchorElNav}
+                            anchorOrigin={{
+                                vertical: 'bottom',
+                                horizontal: 'left',
+                            }}
+                            keepMounted
+                            transformOrigin={{
+                                vertical: 'top',
+                                horizontal: 'left',
+                            }}
+                            open={Boolean(anchorElNav)}
+                            onClose={() => {
+                                handleCloseNavMenu(null);
+                            }}
+                        sx={{
+                                display: {xs: 'block', md: 'none'},
+                            }}
+                        >
+                        {pages.map((page, index)=> {
+                            const { pageTitle, pageURL} = page;
+                            return (
+                            <MenuItem key={index} onClick={()=> {
+                                handleCloseNavMenu(pageURL)
+                            }}
+                            > 
+                                <Typography textAlign="center">{pageTitle}</Typography>
+                            </MenuItem>
+                            );
+                        })}
+                        </Menu>
+                        </Box>
+                    <Typography
+                    variant="h6"
+                    noWrap
+                    component="div"
+                    sx={{ flexGrow: 1, display: {xs: 'flex',md:'none'}}}
+                    > 
+                        Mandy Tsang
+                    </Typography>
+                    <Box sx={{ flexGrow: 1, display: {xs: 'none', md: 'flex' }}}>
+                        {pages.map((page, index) => {
+                            const { pageTitle, pageURL} = page;
+                            return (
+                            <Button
+                                key={index}
+                                onClick={()=>handleCloseNavMenu(pageURL)}
+                                sx={{ my: 2, color: 'white', display: 'block'}}
+                            >
+                                {pageTitle}
+                            </Button>
+                            );
+                            })}
+                    </Box>
                 </Toolbar>
             </Container>
         </AppBar>
     )
 }
+export default NavTabs;
 
 // function NavTabs({ currentPage, handlePageChange }) {
     
@@ -54,5 +134,5 @@ const NavTabs = () => {
 //     );
 // }
 
-export default NavTabs;
+
 

@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
             }
         },
         navStyle: {
-            backgroundColor: "#ffc107",
+            backgroundColor: "#ffeb3b",
         }
     }));
 

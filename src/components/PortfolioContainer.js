@@ -4,20 +4,20 @@ import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
 
 export default function PortfolioContainer() {
-    const [currentPage, setCurrentPage] = useState('Home');
+    const [anchorElNav, setAnchorElNav] = useState('Home');
 
     const renderPage = () => {
-        if (currentPage === 'Portfolio'){
+        if (anchorElNav === 'Portfolio'){
             return <Portfolio />;
         }
         return <Home />;
     };
 
-    const handlePageChange = (page) => setCurrentPage(page);
+    const handlePageChange = (page) => setAnchorElNav(page);
 
     return (
         <div>
-            <NavTabs currentPage = {currentPage} handlePageChange = {handlePageChange} />
+            <NavTabs anchorElNav = {anchorElNav} handlePageChange = {handlePageChange} />
             {renderPage()}
         </div>
     );
