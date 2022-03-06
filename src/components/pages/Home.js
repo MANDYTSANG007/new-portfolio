@@ -22,15 +22,6 @@ export default function Home(){
             When she is not coding, fixing her cars or reading, you will find her traveling around the globe enjoying local cuisine. 
             Her background in the financial industry gives her a solid understanding of users in terms of their needs and values. She is excited to incorporate her background on building creative and stimulating projects that can benefit all.
             </Typography>
-            {/* <Typography variant="h6" display="block"> 
-              Mandy is passionate about building meaningful user experience applications. She is currently studying coding and web development.  
-            </Typography>
-            <Typography variant="h6" display="block"> 
-              Her background in the financial industry gives her a solid understanding of users in terms of their needs and values. She is excited to incorporate her background on building creative and stimulating projects that can benefit all.
-            </Typography>
-            <Typography variant="h6" display="block">
-              When she is not coding, fixing her cars or reading, you will find her traveling around the globe enjoying local cuisine. 
-            </Typography> */}
           </div>
           <div align="center">
             <img src = {pic} alt="Mandy" className={classes.image}/>

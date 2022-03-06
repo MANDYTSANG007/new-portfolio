@@ -4,12 +4,16 @@ import MenuIcon from '@mui/icons-material/Menu';
 import useStyles from '../styles';
 const pages = [
     {
-        pageTitle: "Home",
+        pageTitle: "About Me",
         pageURL: "Home",
     }, 
     {
         pageTitle: "Portfolio",
         pageURL: "Portfolio",
+    },
+    {
+        pageTitle: "Contact",
+        pageURL: "Contact",
     },
 ];
 
