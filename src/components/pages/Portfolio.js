@@ -1,7 +1,7 @@
 import React from 'react';
 //import { Typography, Card, Grid, Container} from '@mui/material';
 import useStyles from '../../styles';
-import {Container} from '@mui/material';
+import {Typography, Container} from '@mui/material';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import ImageList from '@mui/material/ImageList';
@@ -18,6 +18,11 @@ export default function Portfolio() {
   const classes = useStyles();
   return (
     <main>
+      <div align="center">
+            <Typography variant="h2" align="center" >
+              Projects 
+            </Typography>
+      </div>
     <div>
       <Container>
         <ImageList className={classes.imagelist} gap={30}>

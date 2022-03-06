@@ -2,15 +2,26 @@ import React, { useState } from 'react';
 import NavTabs from './NavTabs';
 import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
+import Footer from './Footer';
 
 export default function PortfolioContainer() {
     const [anchorElNav, setAnchorElNav] = useState('Home');
 
     const renderPage = () => {
         if (anchorElNav === 'Portfolio'){
-            return <Portfolio />;
+            return (
+                <div>
+                    <Portfolio />
+                    <Footer />
+                </div>
+            );
         }
-        return <Home />;
+        return (
+            <div>
+                <Home />
+                <Footer />
+            </div>
+        );
     };
 
     const handlePageChange = (page) => setAnchorElNav(page);
@@ -20,5 +31,6 @@ export default function PortfolioContainer() {
             <NavTabs anchorElNav = {anchorElNav} handlePageChange = {handlePageChange} />
             {renderPage()}
         </div>
+        
     );
 }

@@ -11,7 +11,6 @@ const useStyles = makeStyles((theme) => ({
             justify: "center",
             width: "80vw",
             height: "100vw",
-            
         },
         buttons: {
             marginRight: "20px",
@@ -29,16 +28,26 @@ const useStyles = makeStyles((theme) => ({
             alignContent: "center",
         },
         clickableIcon: {
-            marginTop: "10vw",
-            paddingRight: "5vw",
-            transform: "scale(1.9)",
+            display: "flex",
+            marginTop: "5vw",
+            marginBottom: "5vw",
+            marginRight: "5vw",
+            marginLeft: "5vw",
+            transform: "scale(2.7)",
             color: "black",
             '&:hover': {
                 color: "red",
             }
         },
         navStyle: {
-            backgroundColor: "#ffeb3b",
+            backgroundColor: "#ffc107",
+            color: "black",
+        },
+        footer: {
+            textAlign: "center",
+            paddingTop: "1vw",
+            paddingBottom: "1vw",
+            background: "#ffc107",
         }
     }));
 
