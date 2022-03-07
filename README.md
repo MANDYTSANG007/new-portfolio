@@ -20,7 +20,7 @@ This portfolio website will present my ability on building creative and stimulat
 
 ## Design Layout
 
-![alt text](../../../assets/images/portfolio.gif)
+![alt text](assets/images/portfolio.gif)
 
 
 ## Author
