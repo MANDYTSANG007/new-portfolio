@@ -6,11 +6,12 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import DocumentScannerIcon from '@mui/icons-material/DocumentScanner';
 import useStyles from '../../styles';
+import background from "../../assets/images/flower.jpg";
 
 export default function Home(){
   const classes = useStyles();
   return (
-    <main>
+    <main style={{ backgroundImage: `url(${background})`}}>
       <div>
         <Container maxWidth="md">
           <div align="center">
