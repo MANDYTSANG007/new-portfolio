@@ -11,6 +11,7 @@ This portfolio website will present my ability on building creative and stimulat
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [Node.js](https://nodejs.org/en/)
+* [MUI / Material UI](https://mui.com/)
 
 
 ## Deployed Link
@@ -20,7 +21,7 @@ This portfolio website will present my ability on building creative and stimulat
 
 ## Design Layout
 
-![alt text](raw/main/assets/images/portfolio.gif)
+![alt text](./images/portfolio.gif)
 
 
 ## Author
