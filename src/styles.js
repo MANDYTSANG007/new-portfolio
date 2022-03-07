@@ -19,6 +19,10 @@ const useStyles = makeStyles((theme) => ({
             display: "flex",
             justifyContent: "center",
         },
+        formButton: {
+            marginTop: "3vw",
+            marginBottom: "5vw",
+        },
         image: {
             width: "22vw",
             height: "30vw",
@@ -48,6 +52,9 @@ const useStyles = makeStyles((theme) => ({
             paddingTop: "1vw",
             paddingBottom: "1vw",
             background: "#ffc107",
+        },
+        field: {
+            marginBottom: "1vw",
         }
     }));
 
