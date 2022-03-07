@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/new-portfolio/static/css/main.073c9b0a.css",
-    "main.js": "/new-portfolio/static/js/main.688a78dd.js",
-    "static/js/787.8d4efb73.chunk.js": "/new-portfolio/static/js/787.8d4efb73.chunk.js",
-    "static/media/logo.svg": "/new-portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.js": "/new-portfolio/static/js/main.eb1a6886.js",
+    "static/media/perfect-cup.png": "/new-portfolio/static/media/perfect-cup.668baaabb6470d2f0abd.png",
+    "static/media/IMG_4853.JPG": "/new-portfolio/static/media/IMG_4853.75d1a26aaa8b40737dd5.JPG",
+    "static/media/e-commerce.png": "/new-portfolio/static/media/e-commerce.a6e421e4dadd2ef1c3ce.png",
+    "static/media/is-it-a-movie.png": "/new-portfolio/static/media/is-it-a-movie.4d37d5d9e46484e8fbcd.png",
+    "static/media/tech-blog.png": "/new-portfolio/static/media/tech-blog.7387c14c2884f4b1126e.png",
+    "static/media/flower.jpg": "/new-portfolio/static/media/flower.7d534544c16ca94646e2.jpg",
+    "static/media/mt-notebook.png": "/new-portfolio/static/media/mt-notebook.3d625d5f56601126058f.png",
+    "static/media/resume.pdf": "/new-portfolio/static/media/resume.97871f2f8d9981e9e952.pdf",
+    "static/media/work-day-scheduler.png": "/new-portfolio/static/media/work-day-scheduler.bb9205c63bad49e7ae8d.png",
     "index.html": "/new-portfolio/index.html",
-    "main.073c9b0a.css.map": "/new-portfolio/static/css/main.073c9b0a.css.map",
-    "main.688a78dd.js.map": "/new-portfolio/static/js/main.688a78dd.js.map",
-    "787.8d4efb73.chunk.js.map": "/new-portfolio/static/js/787.8d4efb73.chunk.js.map"
+    "main.eb1a6886.js.map": "/new-portfolio/static/js/main.eb1a6886.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.688a78dd.js"
+    "static/js/main.eb1a6886.js"
   ]
 }
