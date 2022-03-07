@@ -4,6 +4,7 @@ import pic from "../../assets/images/IMG_4853.JPG";
 import resume from "../../assets/images/resume.pdf";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import TwitterIcon from '@mui/icons-material/Twitter';
 import DocumentScannerIcon from '@mui/icons-material/DocumentScanner';
 import useStyles from '../../styles';
 import background from "../../assets/images/flower.jpg";
@@ -16,7 +17,7 @@ export default function Home(){
         <Container maxWidth="md">
           <div align="center">
             <Typography variant="h2" align="center" marginTop="1vw" gutterBottom>
-              Hello World! 
+              About Mandy 
             </Typography>
             <Typography variant="h6" display="block">
             Mandy is passionate about building meaningful user experience applications. She is currently studying coding and web development.
@@ -37,6 +38,12 @@ export default function Home(){
             <Grid item >
               <LinkedInIcon 
                 onClick={event => window.open('https://www.linkedin.com/in/man-tsang-64308b22a/')} 
+                className={classes.clickableIcon}
+              />
+            </Grid>
+            <Grid item >
+              <TwitterIcon 
+                onClick={event => window.open('http://twitter.com/@MT_007_MT')} 
                 className={classes.clickableIcon}
               />
             </Grid>

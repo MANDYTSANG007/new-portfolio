@@ -42,14 +42,14 @@ export default function Portfolio() {
                 <Button 
                   className={classes.buttons} 
                   variant="contained"
-                  onClick={event => {window.location=item.githubURL}}
+                  onClick={event => window.open(item.githubURL)}
                   >
                     GitHub
                 </Button>
                 <Button 
                   className={classes.buttons} 
                   variant="contained"
-                  onClick={event => {window.location=item.deployedURL}}
+                  onClick={event => window.open(item.deployedURL)}
                   >
                     Deployed Link
                 </Button>

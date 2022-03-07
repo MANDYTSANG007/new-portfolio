@@ -20,7 +20,7 @@ export default function PortfolioContainer() {
             return (
                 <div>
                     <Contact />
-                    <Footer />
+                   
                 </div>
             );
         }
