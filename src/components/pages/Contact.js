@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { Container, Typography, Button, TextField} from '@mui/material';
 import useStyles from '../../styles';
+import background from "../../assets/images/flower.jpg";
 
 const initialFormValues = {
     id: 0,
@@ -32,45 +33,56 @@ export default function Contact(){
     }
 
     return (
+        <main style={{ backgroundImage: `url(${background})`}}>
         <div>
-            <Container maxWidth="md" align="center">
+            <Container maxWidth="md" align="center" >
                 <Typography variant="h2" align="center" marginTop="1vw" gutterBottom>
                     Contact Mandy
                 </Typography>
-                <TextField 
-                    className={classes.field}
-                    varient="outlined"
-                    label="Name"
-                    name="name"
-                    defaultValue={name}
-                    fullWidth
-                    required
-                    error = {Boolean(validateName())}
-                    helperText = {validateName()}
-                    onChange = {(e) => {setName(e.target.value)}}
+                <div>
+                    <TextField 
+                        className={classes.field}
+                        varient="outlined"
+                        label="Name"
+                        name="name"
+                        defaultValue={name}
+                        fullWidth
+                        required
+                        error = {Boolean(validateName())}
+                        helperText = {validateName()}
+                        onChange = {(e) => {setName(e.target.value)}}
+                    />
+                </div>
+                <div>
+                    <br></br>
+                    <TextField
+                        className={classes.field}
+                        varient="outlined"
+                        label="Email"
+                        name="email"
+                        defaultValue={email}
+                        fullWidth
+                        required
+                        error = {Boolean(validateEmail())}
+                        helperText= {validateEmail()}
+                        onChange = {(e) => {setEmail(e.target.value)}}
                 />
-                <TextField
-                    className={classes.field}
-                    varient="outlined"
-                    label="Email"
-                    name="email"
-                    defaultValue={email}
-                    fullWidth
-                    required
-                    error = {Boolean(validateEmail())}
-                    helperText= {validateEmail()}
-                    onChange = {(e) => {setEmail(e.target.value)}}
+                </div>
+                    <br></br>
+                <div>
+                    <TextField
+                        className={classes.field}
+                        varient="outlined"
+                        label="Message"
+                        name="message"
+                        multiline
+                        rows={6}
+                        fullWidth
+                        required
                 />
-                <TextField
-                    className={classes.field}
-                    varient="outlined"
-                    label="Message"
-                    name="message"
-                    multiline
-                    rows={6}
-                    fullWidth
-                    required
-                />
+                </div>
+                    <br></br>
+                    <br></br>
                 <Button
                     className={classes.formButton}
                     onClick={handleFormSubmit}
@@ -79,8 +91,14 @@ export default function Contact(){
                 >
                     Submit
                 </Button>
+                <div>
+                <br></br>
+                <br></br>
+                <br></br>
+                </div>
             </Container>
         </div>
+        </main>
     )
 
 }
