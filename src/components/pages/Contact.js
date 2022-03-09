@@ -49,8 +49,8 @@ export default function Contact(){
                         fullWidth
                         required
                         error = {Boolean(validateName())}
-                        helperText = {validateName()}
-                        onChange = {(e) => {setName(e.target.value)}}
+                        helperText = {validateName()}       //event.target gives you the element that triggered the event.
+                        onChange = {(e) => {setName(e.target.value)}} //onChange: Execute a JavaScript when a user changes the selected option of a <select> element:
                     />
                 </div>
                 <div>
