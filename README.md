@@ -21,7 +21,7 @@ This portfolio website will present my ability on building creative and stimulat
 
 ## Design Layout
 
-![alt text](portfolio.gif)
+
 ![alt text](screenshot.png)
 
 
