@@ -1,9 +1,8 @@
-# Mandy Tsang Portfolio for Programming Projects 
+# Mandy Tsang's Portfolio
 
-With all the projects I will be working on as a programmer, there is no better place to learn and showcase my skills and works than a portfolio website.
+There is no better place to learn and showcase my programming skills and works than a portfolio website.
 
 
-This portfolio website will present my ability on building creative and stimulating projects. 
 
 ## Built With
 
