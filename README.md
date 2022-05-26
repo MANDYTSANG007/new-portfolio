@@ -11,6 +11,7 @@ There is no better place to learn and showcase my programming skills and works t
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [Node.js](https://nodejs.org/en/)
 * [MUI / Material UI](https://mui.com/)
+* [React](https://reactjs.org/docs/create-a-new-react-app.html)
 
 
 ## Deployed Link
