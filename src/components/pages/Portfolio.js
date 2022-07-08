@@ -8,7 +8,7 @@ import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
 import perfectCupImg from "../../assets/images/perfect-cup.png";
-import movieImg from "../../assets/images/is-it-a-movie.png";
+// import movieImg from "../../assets/images/is-it-a-movie.png";
 import notebookImg from "../../assets/images/mt-notebook.png";
 import techBlogImg from "../../assets/images/tech-blog.png";
 import schedulerImg from "../../assets/images/work-day-scheduler.png";
@@ -69,13 +69,7 @@ const itemData = [
     title: 'Perfect Cup - a Coffee App.',
     githubURL:"https://github.com/MChambersIV/Perfect-Cup",
     deployedURL:"https://powerful-wildwood-54385.herokuapp.com/",
-  },
-  {
-    img: movieImg,
-    title: 'Is-It-a-Movie?',
-    githubURL:"https://github.com/scottybuoy/Is-it-a-Movie.git",
-    deployedURL:"https://scottybuoy.github.io/Is-it-a-Movie/",
-  },
+  }, 
   {
     img: notebookImg,
     title: 'MT-Notebook',
