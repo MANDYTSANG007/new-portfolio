@@ -10,11 +10,7 @@ const pages = [
     {
         pageTitle: "Portfolio",
         pageURL: "Portfolio",
-    },
-    {
-        pageTitle: "Contact",
-        pageURL: "Contact",
-    },
+    }
 ];
 
 const NavTabs = (props) => {
