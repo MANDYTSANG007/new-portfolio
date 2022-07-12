@@ -8,7 +8,6 @@ import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
 import perfectCupImg from "../../assets/images/perfect-cup.png";
-// import movieImg from "../../assets/images/is-it-a-movie.png";
 import notebookImg from "../../assets/images/mt-notebook.png";
 import techBlogImg from "../../assets/images/tech-blog.png";
 import schedulerImg from "../../assets/images/work-day-scheduler.png";

@@ -1,11 +1,7 @@
 import React from 'react';
 import { Typography, Container, Grid} from '@mui/material';
 import pic from "../../assets/images/IMG_4853.JPG";
-import resume from "../../assets/images/resume.pdf";
 import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import DocumentScannerIcon from '@mui/icons-material/DocumentScanner';
 import useStyles from '../../styles';
 import background from "../../assets/images/flower.jpg";
 
@@ -32,24 +28,6 @@ export default function Home(){
             <Grid item >
               <GitHubIcon 
                 onClick={event => window.open('https://github.com/MANDYTSANG007')}
-                className={classes.clickableIcon}
-              />
-            </Grid>
-            <Grid item >
-              <LinkedInIcon 
-                onClick={event => window.open('https://www.linkedin.com/in/man-tsang-64308b22a/')} 
-                className={classes.clickableIcon}
-              />
-            </Grid>
-            <Grid item >
-              <TwitterIcon 
-                onClick={event => window.open('http://twitter.com/@MT_007_MT')} 
-                className={classes.clickableIcon}
-              />
-            </Grid>
-            <Grid item >
-              <DocumentScannerIcon 
-                onClick={event => {window.open(resume)}} 
                 className={classes.clickableIcon}
               />
             </Grid>
