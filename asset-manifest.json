@@ -1,19 +1,17 @@
 {
   "files": {
-    "main.js": "/new-portfolio/static/js/main.57726e32.js",
+    "main.js": "/new-portfolio/static/js/main.a412fa96.js",
     "static/media/perfect-cup.png": "/new-portfolio/static/media/perfect-cup.668baaabb6470d2f0abd.png",
     "static/media/IMG_4853.JPG": "/new-portfolio/static/media/IMG_4853.75d1a26aaa8b40737dd5.JPG",
     "static/media/e-commerce.png": "/new-portfolio/static/media/e-commerce.a6e421e4dadd2ef1c3ce.png",
-    "static/media/is-it-a-movie.png": "/new-portfolio/static/media/is-it-a-movie.4d37d5d9e46484e8fbcd.png",
     "static/media/tech-blog.png": "/new-portfolio/static/media/tech-blog.7387c14c2884f4b1126e.png",
     "static/media/flower.jpg": "/new-portfolio/static/media/flower.7d534544c16ca94646e2.jpg",
     "static/media/mt-notebook.png": "/new-portfolio/static/media/mt-notebook.3d625d5f56601126058f.png",
-    "static/media/resume.pdf": "/new-portfolio/static/media/resume.97871f2f8d9981e9e952.pdf",
     "static/media/work-day-scheduler.png": "/new-portfolio/static/media/work-day-scheduler.bb9205c63bad49e7ae8d.png",
     "index.html": "/new-portfolio/index.html",
-    "main.57726e32.js.map": "/new-portfolio/static/js/main.57726e32.js.map"
+    "main.a412fa96.js.map": "/new-portfolio/static/js/main.a412fa96.js.map"
   },
   "entrypoints": [
-    "static/js/main.57726e32.js"
+    "static/js/main.a412fa96.js"
   ]
 }
