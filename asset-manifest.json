@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.js": "/new-portfolio/static/js/main.a412fa96.js",
+    "main.js": "/new-portfolio/static/js/main.fc747183.js",
     "static/media/perfect-cup.png": "/new-portfolio/static/media/perfect-cup.668baaabb6470d2f0abd.png",
+    "static/media/megame.png": "/new-portfolio/static/media/megame.508d3ed4fab63d709450.png",
     "static/media/IMG_4853.JPG": "/new-portfolio/static/media/IMG_4853.75d1a26aaa8b40737dd5.JPG",
+    "static/media/techTalk.png": "/new-portfolio/static/media/techTalk.715479c32b68804bd8bc.png",
     "static/media/e-commerce.png": "/new-portfolio/static/media/e-commerce.a6e421e4dadd2ef1c3ce.png",
-    "static/media/tech-blog.png": "/new-portfolio/static/media/tech-blog.7387c14c2884f4b1126e.png",
     "static/media/flower.jpg": "/new-portfolio/static/media/flower.7d534544c16ca94646e2.jpg",
     "static/media/mt-notebook.png": "/new-portfolio/static/media/mt-notebook.3d625d5f56601126058f.png",
     "static/media/work-day-scheduler.png": "/new-portfolio/static/media/work-day-scheduler.bb9205c63bad49e7ae8d.png",
     "index.html": "/new-portfolio/index.html",
-    "main.a412fa96.js.map": "/new-portfolio/static/js/main.a412fa96.js.map"
+    "main.fc747183.js.map": "/new-portfolio/static/js/main.fc747183.js.map"
   },
   "entrypoints": [
-    "static/js/main.a412fa96.js"
+    "static/js/main.fc747183.js"
   ]
 }
