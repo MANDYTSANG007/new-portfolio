@@ -9,9 +9,11 @@ import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
 import perfectCupImg from "../../assets/images/perfect-cup.png";
 import notebookImg from "../../assets/images/mt-notebook.png";
-import techBlogImg from "../../assets/images/tech-blog.png";
+import techTalkImg from "../../assets/images/techTalk.png";
 import schedulerImg from "../../assets/images/work-day-scheduler.png";
 import eCommerceImg from "../../assets/images/e-commerce.png";
+import meGameImg from "../../assets/images/megame.png";
+
 
 export default function Portfolio() {
   const classes = useStyles();
@@ -32,6 +34,7 @@ export default function Portfolio() {
                 srcSet={item.img}
                 alt={item.title}
                 loading="lazy"
+                style={{"objectFit": "contain"}}
               />
               <ImageListItemBar
                 title={item.title}
@@ -65,13 +68,19 @@ export default function Portfolio() {
 const itemData = [
   {
     img: perfectCupImg,
-    title: 'Perfect Cup - a Coffee App.',
+    title: 'Perfect Cup - A Coffee App.',
     githubURL:"https://github.com/MChambersIV/Perfect-Cup",
     deployedURL:"https://powerful-wildwood-54385.herokuapp.com/",
   }, 
   {
+    img: meGameImg,
+    title: 'MeGame - A Clicker Game',
+    githubURL:"https://github.com/MANDYTSANG007/megame",
+    deployedURL:"https://mandytsang007.github.io/megame/",
+  }, 
+  {
     img: notebookImg,
-    title: 'MT-Notebook',
+    title: 'MT - Notebook',
     githubURL:"https://github.com/MANDYTSANG007/MT-Notebook",
     deployedURL:"https://hmt-notebook.herokuapp.com/notes",
   },
@@ -88,8 +97,8 @@ const itemData = [
     deployedURL:"https://youtu.be/srMYPrpeWfo",
   },
   {
-    img: techBlogImg,
-    title: 'Developers-Tech-Blog',
+    img: techTalkImg,
+    title: 'TechTalk - A Developer Tech Blog',
     githubURL:"https://github.com/MANDYTSANG007/Developers-Tech-Blog",
     deployedURL:"https://mandyblogapp.herokuapp.com/",
   }
