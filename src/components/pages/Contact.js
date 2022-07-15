@@ -1,3 +1,30 @@
+import React from "react";
+import { Container, Typography, Link } from '@mui/material';
+import background from "../../assets/images/flower.jpg";
+
+import useStyles from '../../styles';
+
+export default function Contact() {
+    const classes = useStyles();
+    return (
+        <main style={{ backgroundImage: `url(${background})`}}>
+        <div className={classes.contact}>
+            <Container maxWidth="md" align="center" >
+                <Typography variant="h2" align="center" marginTop="1vw" gutterBottom>
+                    Contact Mandy
+                </Typography>
+                <div>
+                    <Link variant="h3" paddingTop="50%" href="mailto:h.man.tsang@gmail.com">h.man.tsang@gmail.com</Link>
+                </div>
+            </Container>
+        </div>
+        </main>
+    )
+};
+
+
+
+
 // import React, {useState} from 'react';
 // import { Container, Typography, Button, TextField} from '@mui/material';
 // import useStyles from '../../styles';
