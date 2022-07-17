@@ -20,7 +20,6 @@ export default function PortfolioContainer() {
             return (
                 <div>
                     <Contact />
-                   
                 </div>
             );
         }
@@ -39,6 +38,5 @@ export default function PortfolioContainer() {
             <NavTabs anchorElNav = {anchorElNav} handlePageChange = {handlePageChange} />
             {renderPage()}
         </div>
-        
     );
 }

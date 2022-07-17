@@ -59,7 +59,7 @@ const useStyles = makeStyles((theme) => ({
         },
         contact: {
             height: "100vh",
-        }
+        },
     }));
 
 export default useStyles;

@@ -2,18 +2,22 @@ import React from 'react';
 import { Container, AppBar, Toolbar, Typography, IconButton, Box, Menu, MenuItem, Button} from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import useStyles from '../styles';
+
+// import { HOME_PATH, PORTFOLIO_PATH, CONTACT_PATH} from '../paths';
+
+
 const pages = [
     {
         pageTitle: "About Me",
-        pageURL: "Home",
+        pageURL: "/Home",
     }, 
     {
         pageTitle: "Portfolio",
-        pageURL: "Portfolio",
+        pageURL: "/Portfolio",
     },
     {
         pageTitle: "Contact",
-        pageURL: "Contact",
+        pageURL: "/Contact",
     }, 
 ];
 
